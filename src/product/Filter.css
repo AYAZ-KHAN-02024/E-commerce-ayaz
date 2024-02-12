@@ -1,0 +1,146 @@
+.search_bar{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.708);
+    color: rgba(0, 0, 0, 0.819);
+    font-weight: bold;
+    box-shadow: 2px 4px 9px  rgba(105, 105, 105, 0.428);
+    
+}
+.search_bar::placeholder{
+    color: rgb(42, 43, 44);
+}
+
+.ct-div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+   
+}
+.ct{
+    text-align: start;
+    padding: 5px;
+    background-color: rgba(240, 248, 255, 0.464);
+    border-radius: 5px;
+    margin: 2px;
+    color: rgb(2, 17, 95);
+    border: none;
+    cursor: pointer;
+    font-weight:bold ;
+    letter-spacing: 1px;
+
+}
+
+.ct-act{
+    background-color:rgba(0, 0, 0, 0.708) ;
+    color: aliceblue;
+}
+
+.ct-head{
+    background-color:rgba(224, 255, 255, 0.745) ;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    text-align: start;
+    margin-bottom: 0;
+
+}
+
+.search.active{
+    border-bottom: 0px;
+}
+.cut-filter{
+    display: none;
+    border: none;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    color: rgb(255, 0, 0);
+    padding: 8px;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 2px 4px 50px rgba(106, 97, 97, 0.396);
+    cursor: pointer; 
+    width: 30px;
+    align-self: center;
+    margin-top: 2px;
+}
+.cut-filter div{
+    font-size: medium;
+}
+
+.add-filter{
+    display: none;
+    border: none;
+    background-color: rgb(255, 225, 239);
+    border-radius: 10px;
+    color: black;
+    padding: 8px;
+    font-size: x-small;
+    font-weight: bold;
+    box-shadow: 2px 4px 50px rgba(106, 97, 97, 0.396);
+    cursor: pointer;  
+}
+
+/* price range  */
+
+ .price_range{
+    background-color: rgba(0, 139, 139, 0.818);
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+ }
+
+
+
+
+
+ /* company_filter */
+ .company_filter select{
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+ }
+
+
+@media (max-width:750px) {
+
+    .search_bar{
+        padding: 8px;
+        width: 50%;
+    }
+    .search_bar::placeholder{
+        font-size: x-small;
+        font-weight: bold;
+
+    }
+    
+    .filter-form{
+        padding-bottom: 1px;
+        display: none;
+    }
+    .filter-form button{
+        font-size: x-small;
+    }
+    .filter-form h3{
+        font-size: small;
+    }
+
+    .cut-filter{
+        display: block;
+    }
+
+    .add-filter{
+        display: block;
+    }
+   
+}

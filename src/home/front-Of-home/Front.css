@@ -1,0 +1,66 @@
+.Front{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkseagreen;
+    width: 100vw;
+}
+
+.Front-img img{
+    max-width: 40vw;
+    margin: 30px;
+    border-radius: 30px;
+    
+}
+ 
+
+.Front-Text{
+    max-width: 40vw;
+    text-align: center;
+    color: black;
+    margin: 30px;
+    
+}
+.Front-Text p{
+    color: rgb(92, 0, 0);
+}
+
+.Front-Text button{
+    border: none;
+    background-color: rgb(156, 50, 99);
+    border-radius: 10px;
+    color: black;
+    padding: 8px;
+    margin: 10px;
+    font-size: medium;
+    font-weight: bold;
+    box-shadow: 2px 4px 50px rgba(106, 97, 97, 0.396);
+    cursor: pointer;
+}
+
+
+@media (max-width:700px) {
+    .Front{
+        justify-content: center;
+        
+    }
+    .Front-Text{
+        max-width: 90vw;
+        text-align: center;
+        color: black;
+        margin: 10px;
+       
+        
+    }
+  
+    .Front-img img{
+        max-width: 35vw;
+        margin: 1px;
+        border-radius: 30px;
+        max-width: 90vw;
+        
+    }
+    
+}

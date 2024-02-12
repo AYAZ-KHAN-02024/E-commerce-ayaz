@@ -1,0 +1,230 @@
+.ProductsDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items:center; */
+    background-color: rgba(127, 255, 212, 0.423);
+    flex-wrap: wrap;
+    
+}
+.details-text{
+    background-color: rgba(0, 102, 68, 0.254);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 8px;
+    /* height: auto; */
+}
+
+.reviews-star{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(243, 250, 215, 0.228);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+   
+
+}
+.star i{
+    font-size: large;
+    color: black;
+    -webkit-text-stroke:.5px  rgba(19, 18, 15, 0.729) ;
+   
+}
+.reviews{
+    color: darkblue;
+    font-weight: bolder;
+    font-size: medium;
+}
+.deal{
+    color: rgb(115, 14, 61);
+    text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.269);
+    font-weight: bolder;
+    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.deal-of-day{
+    background-color: black;
+    color: rgb(142, 244, 255);
+    padding: 4px;
+    text-shadow: 4px 3px 10px rgb(4, 194, 187);
+    border-radius: 10px;
+
+}
+.description{
+    color: rgb(33, 60, 60);
+    font-weight: bolder;
+    font-size: medium;
+    text-shadow: 2px 5px 10px rgba(52, 36, 109, 0.322);
+}
+.single-text{
+    background-color: rgba(127, 255, 212, 0.322);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 700px;
+    /* height: auto; */
+}
+.single-icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-child{
+    display: flex;
+    margin: 5px;
+    width: 150px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(7, 94, 126, 0.519);
+    padding: 8px;
+    font-weight: bold;
+    font-size: small;
+    text-wrap: wrap;
+    color: rgba(227, 255, 211, 0.919);
+    border-radius: 10px;
+}
+
+.brand{
+    background-color: rgba(9, 84, 84, 0.32);
+    padding: 10px;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin: 10px;
+}
+
+
+
+/* //image component  */
+.single-img{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(133, 225, 232, 0.912);
+    border-radius: 10px;
+    padding: 5px;
+ 
+
+}
+.row-img-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(95, 146, 79, 0.788);
+    padding: 20px;
+    border-radius: 10px;
+}
+.row-img img{
+    width: 120px;
+    height: 100px;
+    margin:0 4px 0 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main-img img{
+    width: 700px;
+    border-radius: 10px;
+    margin: 0 10px 0 10px;
+}
+.main-img img:hover{
+    scale: 1.05;
+}
+.imgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:700px) {
+
+    .ProductsDetails{
+    font-size: x-small;
+    flex-direction: column;    
+ }
+ .main-img img{
+    width: 280px;
+    margin-top: 10px;
+   
+}
+.row-img-main{
+    padding: 10px;
+}
+.description{
+    color: rgb(33, 60, 60);
+    font-weight: bolder;
+    font-size: x-small;
+    text-shadow: 2px 5px 10px rgba(52, 36, 109, 0.322);
+}
+.row-img img{
+    width: 65px;
+    height: 45px; 
+    margin:0 2px 0 2px;
+}
+
+ .details-text{
+    background-color: rgba(0, 102, 68, 0.254);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.icon-child{
+    width: 60px;
+    font-size: smaller;
+    height: 80px;
+    
+}
+
+.single-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.star i{
+    font-size: small;
+   
+}
+.reviews{
+   
+    font-weight: bolder;
+    font-size: x-small;
+}
+
+}
+
+.load{
+   
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

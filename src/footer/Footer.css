@@ -1,0 +1,40 @@
+
+  footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color:rgb(11, 2, 43) ;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  .sub-button{
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(120, 230, 255);
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 4px 15px aqua;
+}
+  .contact-details h4{
+    color: aqua;
+  }
+
+  .contact-details{
+    background-color: rgba(0, 0, 0, 0.299);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+
+  }
+  .i{
+    color: aliceblue;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,85 @@
+.f-Head{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color: rgb(108, 200, 145);
+    color: rgba(12, 23, 34, 0.85);
+    padding: 10px;
+}
+
+.FeaturedProduct{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: cadetblue;
+    margin: 0px 0 10px 0;
+    padding: 20px;
+
+}
+
+.feature-card{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 248, 220, 0.399);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  max-width: 350px;
+  max-height: 350px;
+
+
+
+}
+.feature-card:hover{
+    scale: 1.1;
+    background-color:rgba(255, 255, 255, 0.208) ;
+    transition: all 1s ease; 
+
+}
+
+
+.feature-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.feature-text h3{
+    margin: 8px;
+}
+
+.feature-img img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.feature-price{
+    background-color: rgba(1, 9, 55, 0.787);
+    padding: 8px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.feature-name{
+    background-color: rgba(1, 9, 55, 0.787);
+    padding: 8px;
+    border-radius: 10px;
+    color: aliceblue;
+    text-align: center;
+   
+}
+
+@media (max-width:700px){
+    .feature-card{
+        width: 270px;
+    }
+    .feature-img img{
+       width: 250px;
+    }
+
+}

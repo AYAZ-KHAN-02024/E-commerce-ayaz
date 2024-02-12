@@ -1,0 +1,114 @@
+
+
+.color{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+
+}
+
+.add_color_cart{
+    border-radius: 50%;
+    /* width: 30px;
+    height: 30px; */
+    margin: 4px;
+    border: none;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+
+}
+.color i{
+    font-size: medium;
+    font-weight: bolder;
+    -webkit-text-stroke: .5px rgb(255, 255, 255);
+}
+.colors{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 100px; */
+
+
+}
+
+.add-rem{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(107, 213, 178, 0.343);
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.cart button{
+    
+        margin: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(78, 254, 134, 0.635);
+        padding: 10px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 2px 4px 15px rgba(5, 74, 74, 0.587);
+        /* text-align: center; */
+      
+}
+
+.cart-button{
+
+        /* margin: 5px; */
+        border-radius: 5px;
+        border: none;
+        background-color: rgba(78, 254, 134, 0.635);
+        padding: 10px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 2px 4px 15px rgba(5, 74, 74, 0.587);
+        width: 100px;
+        
+
+}
+
+@media (max-width:750px) {
+    
+
+    .cart{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: center;
+        
+    }
+
+  .add_color_cart{
+     flex-direction: column;
+  }
+
+}

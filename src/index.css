@@ -1,0 +1,95 @@
+body{
+  background-color: rgb(8, 135, 105);
+  color: aliceblue;
+  width: 100vw;
+  height: auto;
+  overscroll-behavior: none;
+  
+
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  border-radius: 10px;
+}
+.load{
+   
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ 
+.loading{
+  animation: name .5s ease-in  infinite ;
+  font-size: xx-large;
+}
+
+@keyframes name {
+  10%{
+    transform: rotate(10deg);
+  }
+  30%{
+    transform: rotate(30deg);
+  }
+  50%{
+    transform: rotate(50deg);
+  }
+  70%{
+    transform: rotate(70deg);
+  }
+  100%{
+    transform: rotate(3600deg);
+  }
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+.NavLink{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.box{
+  position: relative;
+  top: 8vh;
+}
+
+button:active{
+  scale: .9;
+}
+
+.Error{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(68, 0, 20);
+  font-size: xx-large;
+  text-align: center;
+
+}
+
+.sub-button{
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(120, 230, 255);
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 4px 15px aqua;
+}

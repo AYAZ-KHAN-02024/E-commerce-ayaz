@@ -1,0 +1,35 @@
+.Header{
+    background-color: rgb(12, 206, 135);
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    
+}
+
+.logo{
+    border: none;
+    background-color: rgb(206, 253, 113);
+    border-radius: 10px;
+    color: black;
+    padding: 9px;
+    margin: 10px;
+    font-size: medium;
+    font-weight: bold;
+    box-shadow: 2px 4px 100px black;
+    
+}
+.logoNav.active{
+    border: none;
+}
+@media (max-width:750px) {
+    .logo{
+        font-size: small;
+       
+    }
+
+}

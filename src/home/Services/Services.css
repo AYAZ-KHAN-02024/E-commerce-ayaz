@@ -1,0 +1,30 @@
+.Services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Services-child{
+    display: flex;
+    padding: 100px;
+    width: 450px;
+    background-color: rgba(109, 177, 152, 0.837);
+    border-radius: 20px ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    margin: 15px;
+    box-shadow: 5px 6px 200px rgba(0, 0, 0, 0.27);
+}
+
+@media (max-width:700px){
+    .Services-child{
+     width: 95vw;
+     padding: 40px;
+     margin: 4px;
+    } 
+}

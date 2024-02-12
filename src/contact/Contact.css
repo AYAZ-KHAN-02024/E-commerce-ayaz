@@ -1,0 +1,82 @@
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    
+}
+.h2-contact{
+    margin-top: 40px;
+    margin-bottom: 0;
+    border-radius: 10px ;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    padding: 12px;
+    
+}
+iframe{
+    border-radius: 10px;
+    margin: 20px;
+    width:97vw;
+    border: 5px solid rgba(0, 30, 255, 0.332);
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 68, 105, 0.746);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 300px;
+
+}
+
+.contact-form input{
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.contact-form .sub-button{
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(141, 255, 120);
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form textarea{
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 200px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    resize: none;
+  }
+
+
+.contact-form input::placeholder{
+    color: rgb(77, 0, 0);
+    font-weight: bold;
+}
+
+@media (max-width:700px)
+{
+   
+
+}
