@@ -21,27 +21,25 @@ function FilterReducer(state, action) {
   }
 
   if (action.type === "GET_SORT") {
-    // let userSort=document.getElementById('sort')
-    // let sort_value = userSort.options[userSort.selectedIndex].value;
 
     return {
       ...state,
       Sorting_value: action.payload,
-
 
     }
   }
 
   if (action.type === 'SORTING_PRODUCT') {
     let newSortData;
-    let copySort = [...action.payload]
+    let copyProduct = [...action.payload]
+    let afterFilter = state.filter_Product;
 
     if (state.Sorting_value === "low-high") {
       // this is for ascending order , on base of price so thats why a.price 
       const sortingItems = (a, b) => {
         return a.price - b.price
       }
-      newSortData = copySort.sort(sortingItems);
+      newSortData = afterFilter.sort(sortingItems);
     }
 
     if (state.Sorting_value === "high-low") {
@@ -49,20 +47,18 @@ function FilterReducer(state, action) {
       const sortingItems = (a, b) => {
         return b.price - a.price
       }
-      newSortData = copySort.sort(sortingItems);
+      newSortData = afterFilter.sort(sortingItems);
       //sortingItems have a and b parameter, and they are fetching data like price and stars from copySort
     }
 
+    
 
-    if (state.Sorting_value === "featured") {
-      newSortData = copySort
+    if (state.Sorting_value === "sort" ) {
+      newSortData =copyProduct;
+     }
+    
 
-    }
-
-
-
-
-    return {
+  return {
       ...state,
       filter_Product: newSortData,
     }
@@ -73,7 +69,7 @@ function FilterReducer(state, action) {
   //  for search bar
   if (action.type === "SEARCH_VALUE") {
     const { name, val } = action.payload;
-
+    
     return {
       ...state,
       filters: {
@@ -88,6 +84,7 @@ function FilterReducer(state, action) {
   }
 
   if (action.type === 'SEARCH_PRODUCT') {
+  
     let { all_Product } = state;
     let copyProduct = [...all_Product];
 

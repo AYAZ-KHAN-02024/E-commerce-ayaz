@@ -8,7 +8,7 @@ const FilterContext = createContext();
 const initialState = {
     filter_Product: [],
     all_Product: [],
-    Sorting_value: "featured",
+    Sorting_value: "sort",
     isFilterLoading: false,
     filters: {
         search_bar_value: "",
@@ -51,9 +51,9 @@ export const FilterContextProvider = ({ children }) => {
 
     useEffect(() => {
 
-        dispatch({ type: "SORTING_PRODUCT", payload: Product })
+        dispatch({ type: "SORTING_PRODUCT", payload:Product })
 
-    }, [Product, state.Sorting_value,])
+    }, [Product, state.Sorting_value,state.filters])
 
 
     //for search-bar filter 

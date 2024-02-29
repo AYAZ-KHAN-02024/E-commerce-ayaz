@@ -129,7 +129,9 @@ function Filter() {
           <div className='price_range'>
 
             <button className="ct"
-              onClick={() => { ClearFilters() }}
+              onClick={() => { ClearFilters();
+                location.reload();
+               }}
             >Clear-Filters</button>
           </div>
 

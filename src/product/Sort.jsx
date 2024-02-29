@@ -7,11 +7,10 @@ function Sort() {
         <>
             <div className="total-products">{filter_Product.length} Total Products </div>
             <div className="sort-div">
-                <form action="#" className='sort-form'>
-                    <label htmlFor="sort">
+              
                         <select name="sort" id="sort" className='sort-select' onClick={Sorting}>
                             
-                            <option value="featured">Sort Price</option>
+                            <option value="sort">Sort-Price</option>
                             <option disabled></option>
                             <option value="low-high" >Price(Low-High)</option>
                             <option disabled></option>
@@ -19,8 +18,7 @@ function Sort() {
                             <option disabled></option>
                             
                         </select>
-                    </label>
-                </form>
+                   
             </div>
         </>
     )

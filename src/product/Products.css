@@ -50,6 +50,10 @@
 
     font-weight: bold;
 }
+select:active{
+    scale: .95;
+}
+
 
 @media (max-width:750px) {
     .Products {

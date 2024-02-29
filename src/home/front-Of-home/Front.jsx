@@ -16,7 +16,7 @@ function Front({ Heading }) {
         <h5>welcome to</h5>
         <h1>{Name}</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum itaque quod sunt sint necessitatibus corrupti facilis sed tenetur nemo ipsam quo alias aliquam incidunt, rerum tempora, aut eos dignissimos provident iusto quidem amet? </p>
-        <Link className="NavLink" ><button>shop now</button></Link>
+        <Link className="NavLink" to='/products'><button>shop now</button></Link>
       </div>
       <div className="Front-img">
 
